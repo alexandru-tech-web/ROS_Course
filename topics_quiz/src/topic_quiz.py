@@ -14,15 +14,15 @@ def callback(msg):
       move.angular.z = 0.0
 
 
-   if msg.ranges[360] < 1:
+  if msg.ranges[360] < 1:
       move.linear.x = 0.0
       move.angular.z = 0.5
  #left if obj in right     
-   if msg.ranges[0] < 1:
+  if msg.ranges[0] < 1:
       move.linear.x = 0.0
       move.angular.z = 0.5
   #right if obj in left    
-   if msg.ranges[719] > 1:
+  if msg.ranges[719] > 1:
       move.linear.x = 0.0
       move.angular.z = -0.5
 
