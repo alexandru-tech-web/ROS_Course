@@ -30,6 +30,6 @@ def callback(msg):
 
 rospy.init_node('topic_publisher')
 sub = rospy.Subscriber('/scan', LaserScan, callback) 
-pub = rospy.Publisher('/cmd_vel', Twist)
+pub = rospy.Publisher('/cmd_vel', Twist, queue_size = 1)
 
 rospy.spin()
