@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import rospy
-from quiz_services_pkg.srv import CustomServMess, CustomServMessResponse
+from quiz_services_pkg.srv import custommessage, custommessageResponse
 from geometry_msgs.msg import Twist 
 
 
@@ -29,6 +29,6 @@ def my_callback(request):
 move = Twist()
 pub = rospy.Publisher("/cmd_vel", Twist, queue_size = 1)
 rospy.init_node('service_server') 
-response = CustomServMessResponse()
-my_service = rospy.Service('/move_square', CustomServMess , my_callback) 
+response = custommessageResponse()
+my_service = rospy.Service('/move_square', custommessage , my_callback) 
 rospy.spin()
