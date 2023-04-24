@@ -1,0 +1,11 @@
+<launch>
+  <!-- Lansarea serverului -->
+  <node pkg="quiz_services_pkg" type="service_server.py" name="service_server" output="screen">
+
+  </node>
+
+  <!-- Lansarea clientului -->
+  <node pkg="quiz_services_pkg" type="service_client.py" name="service_client" output="screen">
+
+  </node>
+</launch>

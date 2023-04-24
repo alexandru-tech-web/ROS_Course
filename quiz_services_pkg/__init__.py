@@ -1,0 +1,1 @@
+from quiz_services_pkg.scripts import CustomServiceServer
