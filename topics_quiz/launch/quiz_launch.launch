@@ -1,0 +1,3 @@
+<launch>
+  <node name="topic_publisher" pkg="quiz" type="topic_quiz.py" output="screen"/>
+</launch>

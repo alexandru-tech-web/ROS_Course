@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ubuntu/simulation_ws/devel/include/**",
+        "/home/ubuntu/catkin_ws/devel/include/**",
+        "/home/ubuntu/catkin_ws_homework/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ubuntu/simulation_ws/src/ardrone_autonomy/include/**",
+        "/home/ubuntu/simulation_ws/src/ardrone_gazebo/include/**",
+        "/home/ubuntu/catkin_ws_homework/src/mir_robot/mir_dwb_critics/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

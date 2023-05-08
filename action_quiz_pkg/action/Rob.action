@@ -1,0 +1,8 @@
+#goal
+string TAKEOFF
+string LAND
+---
+#result
+---
+#feedback
+float32 progress

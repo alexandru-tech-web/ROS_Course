@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ubuntu/simulation_ws/devel/lib/python3/dist-packages",
+        "/home/ubuntu/catkin_ws/devel/lib/python3/dist-packages",
+        "/home/ubuntu/catkin_ws_homework/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ubuntu/simulation_ws/devel/lib/python3/dist-packages",
+        "/home/ubuntu/catkin_ws/devel/lib/python3/dist-packages",
+        "/home/ubuntu/catkin_ws_homework/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

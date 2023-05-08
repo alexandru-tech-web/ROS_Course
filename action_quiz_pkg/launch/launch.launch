@@ -1,0 +1,7 @@
+<launch>
+    <!-- Start the action server -->
+    <node name="ardrone_action_server" pkg="action_quiz_pkg" type="action_server.py" output="screen" />
+
+    <!-- Delay the action client launch to ensure the action server is running -->
+    <node name="drone_control_client" pkg="action_quiz_pkg" type="action_client.py" output="screen" />
+  </launch>

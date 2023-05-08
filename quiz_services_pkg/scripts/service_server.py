@@ -7,16 +7,17 @@ from geometry_msgs.msg import Twist
 
 def my_callback(request):
     rospy.loginfo("Serverul este actionat")
-    move.linear.x = request.side    #move in linear
-    move.angular.z = -1.57          # move in angular 90* 
-    move.linear.x = request.side
-    move.angular.z = -1.57
-    move.linear.x = request.side
-    move.angular.z = -1.57
-    move.linear.x = request.side
-    move.angular.z = -1.57
+
     i = 0
-    for i  in range(request.repetition):
+    for i  in range(request.repetitions):
+        move.linear.x = request.side    #move in linear
+        move.angular.z = -1.57          # move in angular 90* 
+        move.linear.x = request.side
+        move.angular.z = -1.57
+        move.linear.x = request.side
+        move.angular.z = -1.57
+        move.linear.x = request.side
+        move.angular.z = -1.57
         pub.publish(move)
         rospy.sleep(2)
     move.linear.x = 0

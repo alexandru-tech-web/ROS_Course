@@ -12,8 +12,8 @@ rospy.wait_for_service('/move_square')
 move_direction_service = rospy.ServiceProxy('/move_square', custommessage)
 # Create an object of type MoveInSquareRequest
 move_direction_object = custommessageRequest()
-move_direction_object.side = 5
-move_direction_object.repetitions = 4
+move_direction_object.side = 10
+move_direction_object.repetitions = 16
 # Send through the connection the name of the request
 result = move_direction_service(move_direction_object)
 # Print the result given by the service called
