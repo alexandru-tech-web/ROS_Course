@@ -1,6 +1,5 @@
 #goal
-string TAKEOFF
-string LAND
+string goals
 ---
 #result
 ---
